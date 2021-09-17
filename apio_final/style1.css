@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:red;
+    
+   
+    }
+    div{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    position:relative;
+    max-height:100vh;
+    
+    }
+    .rec{
+        
+        background-color:white;
+        position:absolute;
+       
+        }

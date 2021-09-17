@@ -28,3 +28,7 @@ function myFunction(){
   ValidateEmail(frm1.exampleInputEmail1.value)
   CheckPassword(frm1.inputPassword5.value)
 }
+
+function myfunc(){
+  document.getElementById("demo").innerHTML=frm1.exampleInputEmail1.value
+}
