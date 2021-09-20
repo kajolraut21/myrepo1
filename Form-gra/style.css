@@ -1,0 +1,23 @@
+
+
+.bt-st{
+    margin:0px,15px;
+    display:inline-block;
+    padding: 10px, 40px;
+    background:none;
+    border:2px solid #44a08d;
+    border-radius:99px;
+    font-size: 20px;
+}
+
+.bt-st:hover{
+    margin:0px,15px;
+    padding: 10px, 40px;
+    
+    border:2px solid #44a08d;
+    border-radius:99px;
+    
+    color: white;
+    background-color:#44a08d ;
+
+} 
