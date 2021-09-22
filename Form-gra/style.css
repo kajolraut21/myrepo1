@@ -5,7 +5,7 @@
     display:inline-block;
     padding: 10px, 40px;
     background:none;
-    border:2px solid #44a08d;
+    border:2px solid #ee0979;
     border-radius:99px;
     font-size: 20px;
 }
@@ -14,10 +14,14 @@
     margin:0px,15px;
     padding: 10px, 40px;
     
-    border:2px solid #44a08d;
+    border:2px solid #ee0979;
     border-radius:99px;
     
     color: white;
-    background-color:#44a08d ;
+    background-color:#ee0979 ;
 
 } 
+
+.form-control:focus{
+    box-shadow: none !important;
+}
