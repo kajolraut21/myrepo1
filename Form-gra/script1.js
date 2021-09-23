@@ -2,15 +2,22 @@ let email= document.getElementById("exampleInputEmail1")
 let password = document.getElementById("inputPassword5")
 let emailText = document.getElementById("emailHelp")
 let passwordText = document.getElementById("passwordHelpBlock")
+let field_color = email.style.borderColor
+let text_color = emailText.style.color
+
+
+
 // email.addEventListener("input",validateEmail)
-function validateEmail(){
+function validateEmail(){ 
   if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))){
     console.log(email.value)
     email.style.borderColor = "red";
     emailText.style.color = "red";
   }else{
-    email.style.borderColor = "black";
-    emailText.style.color = "black";
+    console.log(field_color)
+    console.log(rad)
+    email.style.borderColor = field_color;
+    emailText.style.color = text_color;
   }
 }
 
@@ -22,8 +29,8 @@ function validatePassword(){
   password.style.borderColor = "red";
   passwordText.style.color = "red";
 }else{
-  password.style.borderColor = "black";
-  passwordText.style.color = "black";
+  email.style.borderColor = field_color;
+    emailText.style.color = text_color;
 }
 }
 
@@ -56,7 +63,7 @@ Submit1.addEventListener("submit", function(event){
   }
 })
 
-
+  
   
 
 

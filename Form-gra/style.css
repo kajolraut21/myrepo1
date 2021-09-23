@@ -1,12 +1,22 @@
-
-
 .bt-st{
+    background:none;
+    border:2px solid #ee0979;
+    border-radius: .25rem;
+}
+.bt-st:hover{
+    border:2px solid #ee0979;
+    color: white;
+    background-color:#ee0979 ;
+    border-radius: .25rem;
+}
+
+/* .bt-st{
     margin:0px,15px;
     display:inline-block;
     padding: 10px, 40px;
     background:none;
     border:2px solid #ee0979;
-    border-radius:99px;
+    
     font-size: 20px;
 }
 
@@ -15,13 +25,13 @@
     padding: 10px, 40px;
     
     border:2px solid #ee0979;
-    border-radius:99px;
+    
     
     color: white;
     background-color:#ee0979 ;
 
-} 
+}  */
 
-.form-control:focus{
+/* .form-control:focus{
     box-shadow: none !important;
-}
+} */
