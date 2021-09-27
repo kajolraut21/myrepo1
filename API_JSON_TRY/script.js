@@ -31,15 +31,31 @@ async function getapi(url) {
 .then(res => res.json()
 )
 .then(data => {
-    console.log(data)
-
-    document.getElementById("demo").innerHTML = data.text
+    let dat = document.getElementById("demo")
+    dat.innerHTML = data.text
+    myMove()
 })
 .catch(error => {
     console.log(error)
     document.getElementById("demo").innerHTML = "COULD NOT FETCH"
 })
 }
+function myMove() {
+    let id = null;
+    const elem = document.getElementById("demo");   
+    let pos = -50;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 0) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        
+        elem.style.left = pos + "px"; 
+      }
+    }
+  }
 
 
 // function myFunc() {
