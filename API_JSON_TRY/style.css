@@ -1,24 +1,23 @@
-
-
-/* @keyframes anim{
-    from{
-        background-color: beige;
-    }
-    to{
-background-color: red;
-    }
-} */
-
-/* #demo{
-  
-  top: 0;
-  left: 0;
-  transition: transform 1s;
-} */
-
-#checking{
+/* #checking{
     position: relative;
 }
-.demo{
+
+#demo{
     position: absolute;
+} */
+
+.animat{
+    animation: anim 5s;
 }
+
+@keyframes anim{
+    from{
+     
+        opacity: 0
+    }
+    to{
+    
+        opacity: 1;
+    }
+}
+

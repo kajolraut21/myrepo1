@@ -31,31 +31,40 @@ async function getapi(url) {
 .then(res => res.json()
 )
 .then(data => {
-    let dat = document.getElementById("demo")
-    dat.innerHTML = data.text
-    myMove()
+    console.log(data)
+    let var1 = document.getElementById("demo")
+   
+    var1.innerHTML = data.text
+    var1.classList.remove("animat")
+    void var1.offsetWidth;
+    var1.classList.add("animat")
+    // document.getElementById("demo").removeClass("animat").addClass("animat")
 })
 .catch(error => {
     console.log(error)
     document.getElementById("demo").innerHTML = "COULD NOT FETCH"
 })
 }
-function myMove() {
-    let id = null;
-    const elem = document.getElementById("demo");   
-    let pos = -50;
-    clearInterval(id);
-    id = setInterval(frame, 5);
-    function frame() {
-      if (pos == 0) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        
-        elem.style.left = pos + "px"; 
-      }
-    }
-  }
+
+// -----------------CHECK THIS LATER-------------
+// function myMove() {
+//   let id = null;
+//   const elem = document.getElementById("demo");   
+//   let opa = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 10);
+//   console.log(id)
+//   function frame() {
+//     if (opa == 1) {
+//       clearInterval(id);
+//     } else {
+//       opa+=0.01; 
+//     //   elem.style.top = pos + "px"; 
+//       elem.style.opacity =opa; 
+//     }
+//   }
+// }
+
 
 
 // function myFunc() {
